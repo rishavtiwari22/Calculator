@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cart {
+    padding: 20px;
+    width: 90%; 
+    height: 70%;
+    max-width: 400px; 
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 5px;   
+    height: 11vh;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    border: 0px solid black;
+    color: white;
+    font-size: 2rem; 
+}
+
+.classbutton {
+    padding-top: 10px;
+    margin-top: 10px;
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: space-between;
+}
+
+button {
+    flex: 1 1 20%; 
+    height: 60px; 
+    font-size: 1.5rem; 
+    color: white;
+    background-color: rgb(88, 87, 87);
+    border: none;
+    border-radius: 20%;
+    transition: background-color 0.1s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon {
+    color: black;
+    background-color: rgb(254, 172, 72);
+}
+
+.num {
+    background-color: rgb(65, 65, 65);
+}
+
+@media (max-width: 768px) {
+    button {
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        height: 65px;
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 2rem;
+        height: 8vh;
+    }
+}
